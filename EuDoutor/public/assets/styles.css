@@ -1,0 +1,47 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #C7E7FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 35%;
+    height: 60%;
+    background: #fff;
+    display: grid;
+    grid-template: 20% 60% 20%/ 1fr;
+    grid-template-areas:
+        "up"
+        "content"
+        "down";
+}
+
+body {
+    margin: 0px;
+}
+
+.content{
+    grid-area: content;
+}
+
+.txt_up {
+    text-align: center;
+    grid-area: up;
+}
+
+.txt_down {
+    text-align: center;
+    grid-area: down;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 1%;
+    max-width: 50%;
+}
