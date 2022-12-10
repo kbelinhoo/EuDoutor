@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/assets/styles.css" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 class="txt_up">Cadastre-se</h1>
+            <form action="/register" method="post" class="content">
+                <div class="center">
+                    <img src="" alt=""> 
+                    <!-- Imagem logo medico ou paciente -->
+                </div>
+                <div class="center">
+                    <label>Nome:</label>
+                    <input type="text" name="name">
+                    <br><br>
+                </div>
+                <div class="center">
+                    <label>Email:</label>
+                    <input type="email" name="email">
+                    <br><br>
+                </div>
+                <div class="center">
+                    <label>Senha:</label>
+                    <input type="password" name="password">
+                    <br><br>
+                </div>
+                <button type="submit" class="center">Criar conta</button>
+            </form>
+            <p class="txt_down">Já possui cadastro? <a href="/login">Faça seu login.</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
