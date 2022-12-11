@@ -1,0 +1,1 @@
+Está faltando as pastas .env e gitignore dentro da pasta EuDoutor, além disso também falta a node_modules e está pasta vendor normalmente não possui nada, nem esse README.
