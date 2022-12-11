@@ -87,31 +87,33 @@
                 <br><br>
             </ul>
         </nav>
-        
+
         <main class="box">
             <br><br><br><br><br><br>
-            <h1 class="txt_center">Posts</h1>
-            <p class="txt_center">Aqui é sua área restrita.</p>
+            <h1 class="txt_center01">Posts:</h1>
+            <p class="txt_center1">Aqui é sua área restrita.</p>
             <br><br>
             <% for (var i=0;posts.length> i; i++){ %>
-                <h2 class="txt_center">
+                <h2 class="txt_center2">
                     <%= posts[i].titulo %>
                 </h2>
-                <p class="txt_center">
+                <p class="txt_center3">
                     <%= posts[i].conteudo %>
                 </p>
                 <a href="/deletar/<%=posts[i].id%>"><button id="btn_delete">Deletar</button></a>
                 <% } %>
                     <br><br>
         </main>
-        
+
     </div>
 
     <footer id="footer">
         <img id="Face" src="/public/assets/img/Icon Facebook.png" alt="Facebook">
-        <a href="https://www.facebook.com/profile.php?id=100088262154683&mibextid=LQQJ4d" id="Facebook" target="_blank">Facebook</a>
+        <a href="https://www.facebook.com/profile.php?id=100088262154683&mibextid=LQQJ4d" id="Facebook"
+            target="_blank">Facebook</a>
         <img id="Insta" src="/public/assets/img/Icon Instagram.png" alt="Instagram">
-        <a href="https://www.instagram.com/eu_doutor_/?igshid=YmMyMTA2M2Y%3D" id="Instagram" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/eu_doutor_/?igshid=YmMyMTA2M2Y%3D" id="Instagram"
+            target="_blank">Instagram</a>
         <img id="tt" src="/public/assets/img/Icon Twitter.png" alt="">
         <a href="https://twitter.com/eudoutor_?s=21&t=hpyZEfbRcngtBVSQOkCeXQ" id="Twitter" target="_blank">Twitter</a>
         <!-- <img id="iconefelefone" src="img" alt="telefone"> -->
