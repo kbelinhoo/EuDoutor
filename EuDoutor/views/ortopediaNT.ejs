@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/assets/estilo.css" type="text/css">
     <title>EuDoutor</title>
-    <link rel="shortcut icon" href="img/icons8-médico-80.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/assets/img/icons8-médico-80.png" type="image/x-icon">
+    <link rel="stylesheet" href="/public/assets/ortopedia.css" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -65,33 +65,49 @@
         </div>
     </nav>
 
-    <div id="center_na">
-        <main class="box">
-            <h1 class="txt_center">Atestados criados pelo seu médico</h1>
-            <br><br>
-            <% for (var i=0;posts.length> i; i++){ %>
-                <h2 class="txt_center">
-                    <%= posts[i].titulo %>
-                </h2>
-                <p class="txt_center">
-                    <%= posts[i].conteudo %>
-                </p>
-                <% } %>
-                    <br><br>
-        </main>
+    <div class="container">
+        <h1 class="txt_center">Ortopedia</h1>
+        <P class="txt_center">É uma especialidade médica que atua no estudo e tratamento de doenças, lesões e
+            deformidades
+            do aparelho locomotor, como articulações, músculos, ossos e ligamentos.
+            Muitas vezes, também vem acompanhada da traumatologia, que trata os traumas oriundos de fraturas e lesões,
+            que
+            são uma das principais fontes de problemas atendidos por essa especialidade</P>
+        <h1 class="txt_center">Especialistas</h1>
+
+
+        <section id="s1">
+            <img src="/public/assets/img/Dra JadePS.png" alt="" id="img1_s1">
+            <p id="p_s1">Sou ortopedista com mais de 15 anos de carreira, e apaixonada pela profissão e pela
+                possibilidade de
+                oferecer mais bem-estar aos pacientes. Já comandei mais de 5.000 cirurgias e possuo um profundo
+                conhecimento técnico em tratamentos por ondas de choque, cirurgias de joelho e ombro e medicina
+                esportiva.</p>
+        </section>
+        <section id="s2">
+            <img src="/public/assets/img/Dr LeePS.jpg" alt="" id="img2_s2">
+            <p id="p_s2">Me graduei em Medicina na Universidade de São Paulo. Fui médico residente no Instituto de
+                Ortopedia e Traumatologia do Hospital das Clínicas da Faculdade de Medicina da Universidade de São
+                Paulo. Especializado em Cirurgia do Pé e Tornozelo no IOT – HC – FMUSP.</p>
+        </section>
+        <section id="s3">
+            <img src="/public/assets/img/Dra VanessaPS.jpg" alt="" id="img3_s3">
+            <p id="p_s3">Sou formada em Medicina pela Faculdade de Medicina de São José do Rio Preto (FAMERP) e concluí
+                a Residência médica em Ortopedia e Traumatologia pelo Hospital das Clínicas da Faculdade de Medicina da
+                Universidade de São Paulo , com título de especialista em Ortopedia e Traumatologia pela Sociedade
+                Brasileira de Ortopedia e Traumatologia (SBOT).</p>
+        </section>
+
+        <footer class="footer">
+            <img id="Face" src="/public/assets/img/Icon Facebook.png" alt="Facebook">
+            <a href="#" id="Facebook">Facebook</a>
+            <img id="Insta" src="/public/assets/img/Icon Instagram.png" alt="Instagram">
+            <a href="#" id="Instagram">Instagram</a>
+            <img id="tt" src="/public/assets/img/Icon Twitter.png" alt="">
+            <a href="#" id="Twitter">Twitter</a>
+            <a href="#" id="Telefone">Telefone: +55 11 2902-1992</a>
+        </footer>
     </div>
-
-    <footer class="footer">
-        <img id="Face" src="/public/assets/img/Icon Facebook.png" alt="Facebook">
-        <a href="#" id="Facebook">Facebook</a>
-        <img id="Insta" src="/public/assets/img/Icon Instagram.png" alt="Instagram">
-        <a href="#" id="Instagram">Instagram</a>
-        <img id="tt" src="/public/assets/img/Icon Twitter.png" alt="">
-        <a href="#" id="Twitter">Twitter</a>
-        <!-- <img id="iconefelefone" src="img" alt="telefone"> -->
-        <a href="#" id="Telefone">Telefone: +55 11 2902-1992</a>
-    </footer>
-
 </body>
 
 </html>

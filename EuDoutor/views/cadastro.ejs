@@ -42,27 +42,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/convenio">Convênios</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Especialidades
-                            </a></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/pediatria">Pediatria</a></li>
-                                <li><a class="dropdown-item" href="/ortopedia">Ortopedia</a></li>
-                                <li><a class="dropdown-item" href="/oftalmologia">Oftalmologia</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Atendimentos
-                            </a></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Futuros Atendimentos</a></li>
-                                <li><a class="dropdown-item" href="#">Últimos Atendimentos</a></li>
-                                <li><a class="dropdown-item" href="#">Resultados de exames</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">MeuDoutor</a>
                         </li>
                         <div>
                             <form action="/logout?_method=DELETE" method="post">
@@ -79,20 +60,21 @@
         <nav class="int_nav">
             <br><br><br><br><br><br>
             <ul>
-                <li class="txt_center1"><button class="txt1"><a href="/" class="link1">Index</a></button></li>
+                <li class="txt_center"><button class="txt1"><a href="/" class="link1">Index</a></button></li>
                 <br><br>
-                <li class="txt_center2"><button class="txt2"><a href="/posts" class="link2">Posts</a></button></li>
+                <li class="txt_center"><button class="txt2"><a href="/posts" class="link2">Atestados
+                            criados</a></button></li>
                 <br><br>
-                <li class="txt_center3"><button class="txt3"><a href="/cadastro" class="link3">Cadastro</a></button>
-                </li>
+                <li class="txt_center"><button class="txt3"><a href="/cadastro" class="link3">Criar
+                            atestados</a></button></li>
                 <br><br>
             </ul>
         </nav>
 
         <main class="box">
             <br><br><br><br><br><br>
-            <h1 class="txt_center">Cadastro</h1>
-            <h2 class="txt_center">Olá <%= name %>
+            <h1 class="txt_center">Criação de atestados</h1>
+            <h2 class="txt_center">Olá Dr. <%= name %>
             </h2>
             <p class="txt_center">Aqui é sua área restrita.</p>
             <br>
