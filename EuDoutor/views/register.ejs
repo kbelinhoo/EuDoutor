@@ -5,38 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/assets/styles.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/cadastro.css" type="text/css">
     <title>EuDoutor</title>
     <link rel="shortcut icon" href="/public/assets/img/icons8-médico-80.png" type="image/x-icon">
 </head>
 
 <body>
-    <div class="container">
-        <div class="box">
-            <h1 class="txt_up">Cadastre-se</h1>
-            <form action="/register" method="post" class="content">
-                <div class="center">
-                    <img src="" alt="">
-                    <!-- Imagem logo medico ou paciente -->
+    <div id="container">     
+        <h2 id="EuDoutor">EuDoutor</h2>
+        <div id="box">
+            <img src="/public/assets/img/icons8-médico-80.png" alt="" id="medico">
+            <h1 id="txt_up">Cadastre-se</h1>
+            <form action="/register" method="post" id="content">
+                <div id="center">
+                    
                 </div>
-                <div class="center">
-                    <label>Nome:</label>
-                    <input type="text" name="name">
+                    <div id="centerr">
+                    <label id="nome1">Nome: </label>
+                    <input type="text" name="name" id="nome">
                     <br><br>
                 </div>
-                <div class="center">
-                    <label>Email:</label>
-                    <input type="email" name="email">
+                <div id="center2">
+                    <label id="email1">Email: </label>
+                    <input type="email" name="email" id="email">
                     <br><br>
                 </div>
-                <div class="center">
-                    <label>Senha:</label>
-                    <input type="password" name="password">
+                <div id="center3">
+                    <label id="senha1">Senha: </label>
+                    <input type="password" name="password" id="senha">
                     <br><br>
                 </div>
-                <button type="submit" class="center">Criar conta</button>
+                <button type="submit" id="center1">Criar conta</button>
             </form>
-            <p class="txt_down">Já possui cadastro? <a href="/login">Faça seu login.</a></p>
+            <p id="txt_down">Já possui cadastro? <a href="/login" id="cdst">Faça seu login.</a></p>
+            <p id="opcao">Quer continuar navegando <a href="/landing_?" id="cdst">sem cadastro?</a></p>
         </div>
     </div>
 </body>

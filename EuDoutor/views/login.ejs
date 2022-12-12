@@ -5,35 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/assets/styles.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/login.css" type="text/css">
     <title>EuDoutor</title>
-    <link rel="shortcut icon" href="img/icons8-médico-80.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/assets/img/icons8-médico-80.png" type="image/x-icon">
 </head>
 
 <body>
+   
     <div class="container">
+       <h2 class="EuDoutor">EuDoutor</h2>
         <div class="box">
+            <img src="/public/assets/img/icons8-médico-80.png" alt="medico" class="medico">
             <h1 class="txt_up">Login</h1>
             <form action="/login" method="post">
                 <div class="center">
-                    <img src="" alt="">
-                    <!-- Imagem logo medico ou paciente -->
                 </div>
-                <div class="center">
-                    <label>Email:</label>
+                <div class="center0">
+                    <label class="email">Email:</label>
                     <input type="email" name="email">
-                    <br><br>
+
                 </div>
-                <div class="center">
-                    <label>Senha:</label>
+                <div class="centerr">
+                    <label  class="senha">Senha:</label>
                     <input type="password" name="password">
                     <br><br>
                 </div>
-                <button type="submit" class="center">Logar!</button>
+                <button type="submit" class="center1">Entrar</button>
             </form>
-            <p class="txt_down">Não possui um cadastro? <a href="/register">Faça seu cadastro.</a></p>
+            <p class="txt_down">Não possui um cadastro? <a href="/register" class="txt_down1">Faça seu cadastro.</a></p>
             <br>
-            <p><a href="/landing_?">Continue navegando sem cadastro</a></p>
+            <p  class="opcao">Quer continuar navegando <a href="/landing_?" class="cdst">sem cadastro?</a></p>
        </div>
     </div>
 </body>
