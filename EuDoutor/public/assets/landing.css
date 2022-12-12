@@ -11,24 +11,39 @@ html {
   background-color: #C7E7FF;
   width: 100%;
 }
+#log {
+  position: absolute;
+  left: 85%;
+  text-decoration: none;
+  border: none;
+  width: 8%;
+  height: 35%;
+  cursor: pointer;
+  color: rgb(#179aff, #c7e7ff, #c7e7ff, #41acfd);
+  /*#c7e7ff*   #41acfd*/
+  background-size: 230%;
+  transition: 0.5s;
+}
+#log:hover {
+  background-position: right;
+}
+#log {
+  background-image: linear-gradient(to right, #ffffff, #f7fbff, #4fb3ff, #f7fbff);
+}
 
 .txt_center {
   text-align: center;
   grid-area: txt;
 }
-
 #txt_center1 {
   text-align: center;
 }
-
 #txt_center2 {
   text-align: center;
 }
-
 #txt_center3 {
   text-align: center;
 }
-
 .div_center {
   margin-left: auto;
   margin-right: auto;
@@ -39,7 +54,6 @@ html {
 }
 
 .div_center1
-
 /*tem que trocar essa foto*/
   {
   height: 140%;
@@ -55,7 +69,7 @@ html {
   margin-right: auto;
   display: block;
   margin-top: 5%;
-  max-width: 70%;
+  max-width: 40%;
   /* max-height: 900%; */
 }
 
@@ -92,20 +106,27 @@ html {
     "pac1 feed1 feed1"
     "pac2 feed2 feed2"
     "pac3 feed3 feed3";
-  width: 100%;
+  width: 80%;
   height: 100%;
   margin: 10%;
 }
-
 .feed1 {
+  position: relative;
+  right: 30%;
+  top: 25%;
   grid-area: feed1;
 }
-
 .feed2 {
+  position: relative;
+  right: 30%;
+  top: 25%;
   grid-area: feed2;
 }
 
 .feed3 {
+  position: relative;
+  right: 30%;
+  top: 25%;
   grid-area: feed3
 }
 
@@ -146,17 +167,16 @@ ul {
 }
 
 .footer {
-  background-color: grey;
+  background-color: #C7E7FF;
   position: absolute;
-  top: 330%;
+  top: 300%;
   width: 100%;
   height: 10%;
 }
-
 #Facebook {
   text-decoration: none;
   position: absolute;
-  right: 2%;
+  left: 10%;
 }
 
 #Instagram {
@@ -186,28 +206,28 @@ ul {
   top: 35%;
   right: 7.5%;
 }
-
 #tt {
-  right: 12.4%;
-  top: 65%;
+  right: 4%;
+  top: 5%;
   position: absolute;
-  right: 7.5%;
 }
-
 #Telefone {
   left: 1%;
   position: absolute;
   text-decoration: none;
   top: 35%;
 }
-
 @media only screen and (max-width:950px) {
   .navbar
 
   /*header*/
     {
     background-color: #C7E7FF;
-    width: 102%;
+    width: 100%;
+  }
+  .container {
+    position: relative;
+    left: 5px;
   }
 
   .feed {
@@ -235,29 +255,50 @@ ul {
   }
 
   .footer {
-    background-color: rgb(105, 105, 105);
-    grid-area: f;
-    top: 250%;
+    background-color: #C7E7FF;
+        position: absolute;
+        top: 270%;
+        width: 124%;
+        height: 10%;
   }
 
-  #Fa {
-    left: 20%;
-    top: 20%;
-    width: 60%;
+  #Face {
+    left: 90%;
+    top: 2%;
+    width: 1.5%;
     position: relative;
-
   }
-
-  #Ge {
-    left: 20%;
-    top: 35%;
-    width: 60%;
+  #Insta {
+    left: 90%;
+    top: 4%;
+    width: 1.5%;
     display: block;
     position: relative;
   }
-
+  #tt {
+    left: 90%;
+    top: 5%;
+    width: 1.8%;
+    display: block;
+    position: relative;
+  }
+#Facebook , #Instagram, 
+#Twitter, #Telefone{
+  color: black;
+}
   .feed1 {
-    left: 0%;
+    left: 2%;
+    top: 25%;
+    position: relative;
+  }
+  .feed2 {
+    left: 2%;
+    top: 25%;
+    position: relative;
+  }
+  .feed3 {
+    left: 2%;
+    top: 25%;
     position: relative;
   }
 
@@ -287,97 +328,177 @@ ul {
   /*header*/
     {
     background-color: #C7E7FF;
-    width: 102%;
-  }
-
-  .feed {
-    position: absolute;
-    top: 500%;
-    display: grid;
-    grid-template: 20vh 20vh 20vh / 1.5fr 5fr 5fr;
-    grid-template-areas:
-      "pac1 feed1 feed1"
-      "pac2 feed2 feed2"
-      "pac3 feed3 feed3";
-    /* width: 100%;
-          height: 100%;
-          margin: 10%; */
-  }
-
-  .feed1 {
-    grid-area: feed1;
-    width: 90%;
-    font-size: 130%;
-    /* position: absolute;
-          top: 400%; */
-  }
-
-  #txt_center1 {
-    position: absolute;
-    left: 38%;
-    top: 55.5%;
-  }
-
-  .feed2 {
-    /* position: absolute;
-          top: 400%; */
-    grid-area: feed2;
-    width: 90%;
-    font-size: 130%;
-  }
-
-  .feed3 {
-    /* position: absolute;
-          top: 400%; */
-    grid-area: feed3;
-    width: 90%;
-    font-size: 130%;
-  }
-
-  .footer {
-    background-color: rgb(105, 105, 105);
-    width: 104%;
-    top: 250%;
+    width: 110%;
   }
 
   .carousel {
-    margin-left: auto;
+    left: 5%;
     margin-right: auto;
     display: block;
     margin-top: 5%;
-    max-width: 40%;
+    max-width: 70%;
   }
 
   .div_center1
 
   /*tem que trocar essa foto*/
     {
-    height: 140%;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 5%;
+    width: 70%;
+    height: 110%;
+  }
+
+  .div_center {
     margin-left: auto;
     margin-right: auto;
     display: block;
     margin-top: 5%;
     width: 80%;
-    height: 60%;
+    height: 110%;
   }
-
-  .sections {
-    position: absolute;
-    top: 70%;
+  .div_center1 {
+    position: relative;
+    left: 10%;
+    margin-right: auto;
+    display: block;
+    margin-top: 5%;
+    width: 80%;
+    height: 110%;
   }
-
+  .div_center2 {
+    position: relative;
+    left: 23%;
+    margin-right: auto;
+    display: block;
+    margin-top: 5%;
+    width: 80%;
+    height: 110%;
+  }
+  .div_center3 {
+    position: relative;
+    left: 27%;
+    margin-right: auto;
+    display: block;
+    margin-top: 5%;
+    width: 80%;
+    height: 110%;
+  }
+  .div_center4 {
+    position: relative;
+    left: 20%;
+    margin-right: auto;
+    display: block;
+    margin-top: 5%;
+    width: 80%;
+    height: 110%;
+  }
+  .div_center5 {
+    position: relative;
+    left: 23%;
+    margin-right: auto;
+    display: block;
+    margin-top: 5%;
+    width: 80%;
+    height: 110%;
+  }
+  .div_center6 {
+    position: relative;
+    left: 27%;
+    margin-right: auto;
+    display: block;
+    margin-top: 5%;
+    width: 80%;
+    height: 110%;
+  }
+  #txt_center1 {
+    top: 121%;
+    left: 5%;
+    position: relative;
+  }
   #txt_center2 {
-    top: 110%;
-    left: 35%;
-    position: absolute;
+    top: 121%;
+    left: 5%;
+    position: relative;
   }
-
   #txt_center3 {
-    top: 140%;
-    left: 25%;
-    position: absolute;
+    top: 158%;
+    left: 5%;
+    position: relative;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
+  #log{
+    position: relative;
+    left: 50%;
+    width: 15%;
+    height: 10%;
+  }
+  .feed {
+    display: grid;
+    grid-template: 20vh 20vh 20vh / 1.5fr 5fr 5fr;
+    grid-template-areas:
+      "pac1 feed1 feed1"
+      "pac2 feed2 feed2"
+      "pac3 feed3 feed3";
 
+  }
+  .feed1 {
+    margin-top: 18%;
+    left: 0%;
+    position: relative;
+  }
+  .feed1 {
+    grid-area: feed1;
+    width: 90%;
+    top: 5%;
+    font-size: 100%;
+  }
+  .pac1 {
+    position: relative;
+    margin-top: 100%;
+    width: 80%;
+    height: 70%;
+    grid-area: pac1;
+  }
+  .feed2 {
+    margin-top: 26%;
+    grid-area: feed2;
+    top: 5%;
+    width: 90%;
+    height: 70%;
+    font-size: 100%;
+  }
+  .pac2 {
+    position: relative;
+    margin-top: 150%;
+    width: 90%;
+    height: 70%;
+    grid-area: pac2;
+  }
+  .feed3 {
+    margin-top: 32%;
+    grid-area: feed3;
+    width: 90%;
+    top: 5%;
+    font-size: 100%;
+  }
+  .pac3 {
+    margin-top: 190%;
+    width: 90%;
+    height: 70%;
+    grid-area: pac3;
+  }
+  .footer {
+    background-color: #C7E7FF;
+        position: absolute;
+        top: 260%;
+        width: 110%;
+        height: 10%;
+  }
   #Fa {
     left: 20%;
     top: 20%;
@@ -392,29 +513,6 @@ ul {
     width: 60%;
     display: block;
     position: relative;
-  }
-
-  .feed1 {
-    left: 0%;
-    position: relative;
-  }
-
-  .pac1 {
-    width: 60%;
-    height: 70%;
-    grid-area: pac1;
-  }
-
-  .pac2 {
-    width: 60%;
-    height: 70%;
-    grid-area: pac2;
-  }
-
-  .pac3 {
-    width: 60%;
-    height: 70%;
-    grid-area: pac3;
   }
 
   #Facebook {
@@ -461,43 +559,7 @@ ul {
   /*header*/
     {
     background-color: #C7E7FF;
-    width: 110%;
-  }
-
-  .feed {
-    display: grid;
-    grid-template: 20vh 20vh 20vh / 1.5fr 5fr 5fr;
-    grid-template-areas:
-      "pac1 feed1 feed1"
-      "pac2 feed2 feed2"
-      "pac3 feed3 feed3";
-    /* width: 100%;
-          height: 100%;
-          margin: 10%; */
-  }
-
-  .feed1 {
-    grid-area: feed1;
-    width: 90%;
-    font-size: 100%;
-  }
-
-  .feed2 {
-    grid-area: feed2;
-    width: 90%;
-    font-size: 100%;
-  }
-
-  .feed3 {
-    grid-area: feed3;
-    width: 90%;
-    font-size: 100%;
-  }
-
-  .footer {
-    background-color: rgb(105, 105, 105);
-    width: 104%;
-    top: 250%;
+    width: 100%;
   }
 
   .carousel {
@@ -505,8 +567,8 @@ ul {
     margin-right: auto;
     display: block;
     margin-top: 5%;
-    max-width: 60%;
-    left: 5%;
+    width: 80%;
+    left: 1%;
   }
 
   .sections {
@@ -533,113 +595,119 @@ ul {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    left: 5%;
+    left: 1%;
+  }
+  .div_center2{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    left: 1%;
+  }
+  .div_center3 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    left: 1%;
   }
 
   #txt_center2 {
     top: 110%;
-    left: 35%;
-    position: absolute;
+    left: 5%;
+    position: relative;
   }
 
   #txt_center3 {
-    top: 120%;
-    left: 18%;
-    position: absolute;
+    top: 310%;
+    left: 5%;
+    position: relative;
   }
 
-  #Fa {
-    left: 20%;
-    top: 20%;
-    width: 60%;
-    position: relative;
-
-  }
-
-  #Ge {
-    left: 20%;
-    top: 35%;
-    width: 60%;
-    display: block;
-    position: relative;
+  .feed {
+    display: grid;
+    grid-template: 20vh 20vh 20vh / 1.5fr 5fr 5fr;
+    grid-template-areas:
+      "pac1 feed1 feed1"
+      "pac2 feed2 feed2"
+      "pac3 feed3 feed3";
+    /* width: 100%;
+    height: 100%;
+    margin: 10%; */
   }
 
   .feed1 {
-    left: 0%;
-    position: relative;
+    grid-area: feed1;
+    width: 90%;
+    font-size: 100%;
   }
-
   .pac1 {
-    width: 60%;
-    height: 70%;
+    width: 90%;
+    height: 60%;
+    right: 20%;
     grid-area: pac1;
   }
-
+  .feed1 {
+    font-size: 80%;
+    top: 1%;
+    position: relative;
+  }
   .pac2 {
-    width: 60%;
-    height: 70%;
+    width: 90%;
+    height: 60%;
+    right: 20%;
     grid-area: pac2;
   }
-
+  .feed2 {
+    grid-area: feed2;
+    width: 90%;
+    font-size: 90%;
+  }
   .pac3 {
-    width: 60%;
-    height: 70%;
+    width: 90%;
+    height: 60%;
     grid-area: pac3;
   }
-
-  #txt_center2 {
-    position: absolute;
-    top: 221.8%;
-    left: 38%;
-    font-size: 140%;
+  .feed3 {
+    grid-area: feed3;
+    width: 90%;
+    font-size: 90%;
   }
 
-  #txt_center3 {
+  .footer {
+    background-color: #C7E7FF;
+    width: 104%;
+    top: 405%;
     position: absolute;
-    top: 324.5%;
-    left: 28%;
-    font-size: 130%;
+    }
   }
-
   #Facebook {
     position: absolute;
-    left: 80%;
+    left: 75%;
   }
-
   #Face {
     position: absolute;
-    left: 76%;
+    left: 70%;
     top: 6%;
     width: 3.3%;
   }
-
   #Instagram {
     position: absolute;
-    left: 80%;
+    left: 75%;
   }
-
   #Insta {
     position: absolute;
-    left: 76%;
+    left: 70%;
     top: 35%;
     width: 3.3%;
   }
-
   #Twitter {
     position: absolute;
     left: 80%;
   }
-
   #tt {
     position: absolute;
-    left: 75%;
-    top: 65%;
+    left: 69.5%;
+    top: 67%;
     width: 4.3%;
   }
-
-  .footer {
-    position: absolute;
-    top: 390%;
-    width: 109.2%;
-  }
-}

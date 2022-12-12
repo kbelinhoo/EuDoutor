@@ -1,0 +1,448 @@
+#container {
+  width: 100vw;
+  height: 100vh;
+  background: #C7E7FF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#box {
+  width: 35%;
+  height: 60%;
+  background: #fff;
+  display: grid;
+  grid-template: 20% 60% 20%/ 1fr;
+  grid-template-areas:
+      "up"
+      "content"
+      "down";
+}
+
+body {
+  margin: 0px;
+}
+#medico{
+  position: absolute;
+  top: 30%;
+  left: 47%;
+}
+#content {
+  grid-area: content;
+}
+#txt_up {
+ text-align: center;
+  position: absolute;
+  grid-area: up; 
+  top: 20%;
+  left: 44.5%;
+}
+#txt_down {
+  text-align: center;
+  grid-area: down;
+  font-size: 120%;
+}
+#txt_down1 {
+  color: black;
+  font-size: 100%;
+}
+#centerr {
+  position: absolute;
+  top: 47%;
+  left: 41.5%;
+  width: 55%;
+}
+#center2 {
+  position: absolute;
+  top: 52%;
+  left: 41.5%;
+  max-width: 50%;
+}
+#center3 {
+  position: absolute;
+  top: 57%;
+  left: 41.5%;
+  max-width: 50%;
+}
+#center {
+  left: 44.5%;
+  position: absolute;
+  top: 62%;
+  width: 11%;
+  height: 5%;
+  border: none;
+  cursor: pointer;
+  font-size: 120%;
+  background-color: #C7E7FF;
+  background-size: 230%;
+  transition: 0.5s;
+}
+#center1:hover {
+  background-position: right;
+}
+#EuDoutor{
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+#nome1 {
+  font-size: 120%;
+  left: 150%;
+}
+#senha {
+  font-size: 120%;
+}
+#opcao{
+  position: absolute;
+  font-size: 120%;
+  top: 79%;
+}
+#cdst{
+  color: black;
+}
+@media screen and (max-width:950px) {
+  #box {
+      width: 40%;
+      height: 60%;
+      background: #fff;
+      display: grid;
+      grid-template: 20% 60% 20%/ 1fr;
+      grid-template-areas:
+          "up"
+          "content"
+          "down";
+  }
+  #box{
+      position: absolute;
+      height: 70%;
+      width: 50%;
+      top: 20%;
+  }
+  #nome1 {
+    position: absolute;
+    top: 10%;
+    left: 18%; 
+    width: 10.2%;
+  }
+  #nome{
+    position: absolute;
+    width: 75%;
+    left: 37%;
+  }
+  #email{
+    position: absolute;
+    width: 250%;
+    left: 120%;
+  }
+  #senha1 {
+    position: absolute;
+    top: 10%;
+    left: 60%; 
+    width: 10.2%;
+  }
+  #email1 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 10.2%;
+  }
+  #email{
+    position: absolute;
+    width: 250%;
+    left: 120%;
+  }
+  #senha{
+    position: absolute;
+    width: 250%;
+    left: 120%;
+  }
+  #medico{
+      position: absolute;
+      top: 20%;
+      left: 44%;
+  }
+  #txt_up {
+    text-align: center;
+    position: absolute;
+    grid-area: up; 
+    top: 20%;
+    left: 35%;
+  }
+  #txt_down {
+    position: absolute;
+    top: 80%;
+    right: 20%;
+  }
+  #center{
+    position: absolute;
+    height: 8%;
+    width: 35%;
+    left: 37%;
+    top: 65%;
+  }
+  #center1 {
+      position: absolute;
+      width: 30%;
+      left: 38%;
+      top: 60%;   
+      border: none;
+      cursor: pointer;
+      font-size: 120%;
+      background-size: 230%;
+      transition: 0.5s;
+      background-color: #C7E7FF; 
+  }
+  #txt_down{
+      position:absolute;
+      top: 1%;
+      left: 15%;
+}
+#opcao{
+  position: absolute;
+  top: 98%;
+}
+
+}
+  @media screen and (max-width:750px) {
+    #box {
+          width: 55%;
+          height: 60%;
+          background: #fff;
+          display: grid;
+          grid-template: 20% 60% 20%/ 1fr;
+          grid-template-areas:
+              "up"
+              "content"
+              "down";
+      }
+      #centerr {
+        position: absolute;
+        top: 44%;
+        left: 21%;
+        max-width: 55%;
+      }
+      #center2 {
+        position: absolute;
+        top: 53%;
+        left: 21%;
+        width: 12%;
+      }
+     
+      #center3 {
+        position: absolute;
+        top: 61%;
+        left: 21%;
+        width: 12%;
+      }
+      #medico{
+          position: absolute;
+          top: 17%;
+          left: 44%;
+      }
+      #txt_up {
+        text-align: center;
+        position: absolute;
+        grid-area: up; 
+        top: 10%;
+        left: 35%;
+      }
+      #txt_down {
+        position: absolute;
+        top: 80%;
+        right: 20%;
+      }
+      #center{
+        position: absolute;
+        height: 8%;
+        width: 41%;
+        left: 32.5%;
+        top: 70%;
+      }
+      #center1 {
+          position: absolute;
+          width: 30%;
+          left: 36%;
+          top: 60%;   
+          border: none;
+          cursor: pointer;
+          font-size: 120%;
+          background-size: 230%;
+          transition: 0.5s;
+          background-color: #C7E7FF; 
+      }
+      #txt_down{
+          position:absolute;
+          top: 1%;
+          left: 15%;
+    }
+    #opcao{
+      position: absolute;
+      top: 98%;
+    }
+  }
+
+  @media screen and (max-width:650px) {
+      #box {
+          width: 60%;
+          height: 60%;
+          background: #fff;
+          display: grid;
+          grid-template: 20% 60% 20%/ 1fr;
+          grid-template-areas:
+              "up"
+              "content"
+              "down";
+      }
+      #centerr {
+        position: absolute;
+        top: 45%;
+        left: 21%;
+        max-width: 75.8%;
+        font-size: 105%;
+      }
+      #center2 {
+        position: absolute;
+        top: 53%;
+        left: 21%;
+        width: 13%;
+        font-size: 105%;
+      }
+      #center3 {
+        position: absolute;
+        top: 60%;
+        left: 21%;
+        width: 13.2%;
+        font-size: 105%;
+      }
+      #nome{
+        position: absolute;
+        width: 343%;
+      }
+      #email{
+        position: absolute;
+        width: 350%;
+      }
+      #medico{
+          position: absolute;
+          top: 17%;
+          left: 44%;
+      }
+      #txt_up {
+        text-align: center;
+        position: absolute;
+        grid-area: up; 
+        top: 10%;
+        left: 35%;
+      }
+      #txt_down {
+        position: absolute;
+        top: 80%;
+        right: 10%;
+      }
+      #center{
+        position: absolute;
+        height: 8%;
+        width: 35%;
+        left: 37%;
+        top: 72%;
+      }
+      #center1 {
+          position: absolute;
+          width: 30%;
+          left: 36%;
+          top: 60%;   
+          border: none;
+          cursor: pointer;
+          font-size: 120%;
+          background-size: 230%;
+          transition: 0.5s;
+          background-color: #C7E7FF; 
+      }
+      #txt_down{
+          position:absolute;
+          top: 1%;
+          left: 15%;
+    }
+    #opcao{
+      position: absolute;
+      top: 98%;
+    }
+  }
+
+  @media screen and (max-width:400px) {
+    #box {
+          width: 75%;
+          height: 60%;
+          background: #fff;
+          display: grid;
+          grid-template: 20% 60% 20%/ 1fr;
+          grid-template-areas:
+              "up"
+              "content"
+              "down";
+      }
+  }
+  #centerr {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 80%;
+  }
+  #center2 {
+    position: absolute;
+    top: 53%;
+    left: 10%;
+    width: 16.7%;
+  }
+  #center3 {
+    position: absolute;
+    top: 61%;
+    left: 10%;
+    width: 17%;
+  }
+  #medico{
+      position: absolute;
+      top: 17%;
+      left: 38%;
+  }
+  #txt_up {
+    text-align: center;
+    position: absolute;
+    grid-area: up; 
+    top: 10%;
+    left: 24%;
+  }
+  #txt_down {
+    position: absolute;
+    top: 80%;
+    right: 12%;
+  }
+  #center{
+    position: absolute;
+    height: 8%;
+    width: 45%;
+    left: 30%;
+    top: 72%;
+  }
+  #center1 {
+      position: absolute;
+      width: 30%;
+      left: 36%;
+      top: 60%;   
+      border: none;
+      cursor: pointer;
+      font-size: 120%;
+      background-size: 230%;
+      transition: 0.5s;
+      background-color: #C7E7FF; 
+  }
+  #txt_down{
+      position:absolute;
+      top: 1%;
+      left: 15%;
+}
+#opcao{
+  position: absolute;
+  top: 98%;
+}
